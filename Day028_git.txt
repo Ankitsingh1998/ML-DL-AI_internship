@@ -1,0 +1,63 @@
+#Day028:
+#Git and Github:
+1. signup and create an account
+2. create a repository
+3. copy the url
+4. Open terminal/gitshell
+5. gitshell steps:
+       --> git config --global user.email "email_id"   (to verify your git mail id with system)
+       --> git config --global user.name "user_name"   (to verify your git username with system)
+       Both email and user_name must be verified to connect to the system else it will not work.
+       Once verified and connected will work always.
+    a. pwd --> enters to users directory
+       clear --> to clear entire previous code/work, will not affect work done till that part.
+    b. cloning the remote repo : git clone (my repository url)
+       It will create a folder(Project directory/Working directory) in the desktop containing all its materials.
+       .git directory --> local repository
+    c. cd (repositoryname) --> enters into a directory with same name as repository name.
+    d. touch (filename.py) --> touch command creates an empty file with provided name into that directory.
+    e. git add (filename.py), 
+       git commit -m "Meassage", 
+           git status --> command to check about the repository folder
+       git push
+    f. copied a code and pasted it in my empty code
+       Again performed add, commit with new message and then push to edit the same file with my code content.
+
+#To restore all the data from git, if folder gets deleted from desktop or If laptop gets stolen/crashed:
+    cloning the remote repo : git clone (my repository url)
+
+#If forgot to bring my laptop:
+    git clone (my repository url)
+    git add, commit, push
+    After reaching home I will use my laptop:
+        a. donot clone
+        b. git pull origin master
+        c. work on your project --> git add, git commit, git push
+
+#How to check someone else's code:
+    a. Take his github repository url
+    b. git clone (others url)
+
+#Messed working but not staged and not comitted and not pushed:
+    ls -al (will tell about all files in working directory with size)
+    a. git checkout HEAD file_name.py (retrieves file from local repository)
+    
+#Messed working (staged and comitted) but not pushed:
+    git checkout HEAD~1 file_name.py
+       (Always use git status to see the status of repository)
+    git add file_name.py
+    git commit
+    git push (local to server)
+
+#To know about number of commit, commit id, commit message, on whom commited??
+    git log
+
+#git show --> to show what that commit_id did
+    git show commit_id
+
+#git diff --> tells what is the difference between two source codes(commit_id/commit code)
+    git diff commit1 commit2 
+        (-)ve means something deleted
+        (+)ve means something added
+          
+ 

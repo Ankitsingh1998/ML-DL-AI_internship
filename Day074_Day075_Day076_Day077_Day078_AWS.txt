@@ -1,0 +1,33 @@
+AWS server:
+user: Administrator
+Pass: 9NtGe9w*7=;rlBCUFTf)ykIYu=GoU$Rg
+
+in vscode:
+1) ls
+2) chmod 400 "demo.pem"
+3) scp -i "demo.pem" file_name.file_extension ubuntu@ec2-65-0-72-170.ap-south-1.compute.amazonaws.com:/home/ubuntu
+
+Instance public DNS: ubuntu@ec2-65-0-72-170.ap-south-1.compute.amazonaws.com
+
+On DNS server:
+1) change the permission of uploaded file - chmod 755 file_name.file_extension
+2) ls -lart
+3) sudo apt install unzip
+4) unzip file_name.file_extension
+
+python3 - to install python, by default it's already installed
+quit() - to quit python3 shell
+sudo apt-get install upgrade
+sudo apt install python3-pip
+
+pip installation guide: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install-linux.html
+
+sudo apt update
+sudo apt upgrade
+sudo apt install python3-pip
+pip3 install -r requirements.txt
+
+python3 file_name.py --> to run the file
+vi file_name.py
+:wq --> to exit from file editing
+
